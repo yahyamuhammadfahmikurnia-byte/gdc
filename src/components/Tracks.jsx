@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import trackResearch from "../../Tracksimg/Track illustration(3).svg";
-import trackDesign from "../../Tracksimg/Track illustration(6).svg";
-import trackDevelopment from "../../Tracksimg/Track illustration(4).svg";
-import sectionLabel from "../../Tracksimg/Section label(4).svg";
-import sectionHeading from "../../Tracksimg/Heading(1).svg";
+import trackResearch from "../imgTrack/Track illustration(3).svg";
+import trackDesign from "../imgTrack/Track illustration(6).svg";
+import trackDevelopment from "../imgTrack/Track illustration(4).svg";
+import sectionLabel from "../imgTrack/Section label(4).svg";
+import sectionHeading from "../imgTrack/Heading(1).svg";
 
 const gambarTrack = {
   "research-discovery": trackResearch,
@@ -59,9 +59,7 @@ export default function Tracks() {
           <img
             src={sectionLabel} alt="Find your starting point" className="w-[200px]"
           />
-          <img
-            src={sectionHeading} alt="Many interests. One shared journey." className="h-auto w-full max-w-[650px]"
-          />
+         <p className="text-7xl font-google font-semibold whitespace-nowrap">Many interest. One Shared<br/>journey</p>
           <p className="font-google text-xl text-gray-500">
             Follow what excites you. Explore a track,
             then connect the dots with others.
@@ -118,7 +116,7 @@ export default function Tracks() {
           {track.skills?.slice(0, 3).join(" · ")}
         </p>
         <a
-          href={track.explore_link || "/overview"}
+          href={track.explore_link || " /overview"}
           className="mt-5 inline-block font-google font-medium text-blue-600"
         >
           Explore this track →

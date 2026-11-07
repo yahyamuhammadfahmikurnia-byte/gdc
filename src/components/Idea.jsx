@@ -1,8 +1,8 @@
-import exampleArtwork from "../ideaimg/Example project artwork(2).svg";
-import decorativeCode from "../ideaimg/Decorative code(1).svg";
-import sectionLabel from "../ideaimg/Section label.svg";
-import heading from "../ideaimg/Heading.svg";
-import textLink from "../ideaimg/Text link(1).svg";
+import exampleArtwork from "../imgidea/Example project artwork(2).svg";
+import decorativeCode from "../imgidea/Decorative code(1).svg";
+import sectionLabel from "../imgidea/Section label.svg";
+import heading from "../imgidea/Heading.svg";
+import textLink from "../imgidea/Text link(1).svg";
 
 export default function Idea() {
   return (
@@ -25,15 +25,17 @@ export default function Idea() {
         </div>
         <div className="flex min-w-0 flex-col items-start gap-6">
           <img src={sectionLabel} alt="" className="max-w-full" />
-          <img src={heading} alt="" className="max-w-full" />
-          <p className="font-google text-xl text-gray-500 md:text-2xl">
+           <p className="text-5xl font-google font-semibold whitespace-nowrap">Your next project could <br/> start on campus.</p>
+          <p className="font-google text-xl text-gray-500 ">
             What if finding a study partner, sharing resources, or navigating campus felt easier? Small, familiar problems can be the beginning of meaningful work.
           </p>
           <p className="font-google text-lg text-gray-500 md:text-xl">
             Bring research, design, and development together. Try an idea, get feedback, and make the next version better.
           </p>
           <a href="" target="_blank" rel="noreferrer">
-            <img src={textLink} alt="Explore project-based learning" className="h-auto w-[350px] max-w-full" />
+             <p className="font-google font-medium text-lg text-[#1967D2] " >
+              Explore project-based learning <strong>→</strong>
+             </p> 
           </a>
         </div>
       </div>

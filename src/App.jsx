@@ -1,26 +1,17 @@
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import HomeIntro from "./components/HomeIntro.jsx";
-import Tracks from "./components/Tracks.jsx";
-import LearningFormats from "./components/LearningFormats.jsx";
-import Idea from "./components/Idea.jsx";
-import FirstMove from "./components/FirstMove.jsx";
-import FAQ from "./components/FAQ.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
 
 export default function App() {
   return (
-    <>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Navbar />
-    <main>
-  <Hero />
-  <HomeIntro />
-  <Tracks />
-  <LearningFormats />
-  <Idea />
-  <FirstMove />
-  <FAQ/>
-</main>
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<h1 className="text-4xl text-red-500">URL TIDAK COCOK</h1>} />
+      </Routes>
+    </BrowserRouter>
   );
 }

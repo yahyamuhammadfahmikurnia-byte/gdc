@@ -1,10 +1,9 @@
-
-import campusCommunity from "../../HomeIntroimg/a campus a community.svg";
-import heading from "../../HomeIntroimg/Heading.svg";
-import moreAbout from "../../HomeIntroimg/more about ugm.svg";
-import attribute from "../../HomeIntroimg/Attribute.svg";
-import attributeOne from "../../HomeIntroimg/Attribute-1.svg";
-import attributeTwo from "../../HomeIntroimg/Attribute-2.svg";
+import campusCommunity from "../imgHomeIntro/a campus a community.svg";
+import heading from "../imgHomeIntro/Heading.svg";
+import moreAbout from "../imgHomeIntro/more about ugm.svg";
+import attribute from "../imgHomeIntro/Attribute.svg";
+import attributeOne from "../imgHomeIntro/Attribute-1.svg";
+import attributeTwo from "../imgHomeIntro/Attribute-2.svg";
 
 export default function HomeIntro() {
   return (
@@ -13,12 +12,8 @@ export default function HomeIntro() {
         <div className="flex flex-col items-start gap-8">
           <img
             src={campusCommunity} className="w-[200px]" alt="A campus a community"/>
-          <img
-            src={heading}
-            className="w-[600px] max-w-full"
-            alt="Not just learning tech"
-          />
-          <a href="/about">
+          <p className="text-6xl font-google font-semibold whitespace-nowrap">Not just learning<br/>tech.<br/>Finding your people. </p>
+          <a href="./about">
             <img
               src={moreAbout}
               className="w-[300px] max-w-full -translate-y-[10px]"
@@ -46,3 +41,5 @@ export default function HomeIntro() {
     </section>
   );
 }
+
+

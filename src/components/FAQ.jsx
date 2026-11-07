@@ -1,12 +1,11 @@
 
 import { useEffect, useState } from "react";
-import sectionLabel from "../../Tracksimg/Section label(8).svg";
-import invitationPanel from "../faqimg/Invitation panel.svg";
-import action from "../faqimg/Action.svg";
-import textLink from "../faqimg/Text link.svg";
+import sectionLabel from "../imgfaq/Section label(8).svg";
+import invitationPanel from "../imgfaq/Invitation panel(4).svg";
+import action from "../imgfaq/Action.svg";
+import textLink from "../imgfaq/Text link.svg";
 
 const API_URL = "https://gdgoc-ugm-api.vercel.app/api/faqs";
-
 export default function FAQ() {
   const [faqs, setFaqs] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -23,12 +22,12 @@ export default function FAQ() {
           signal: controller.signal
         });
         if (!response.ok) {
-          throw new Error("Gagal mengambil data FAQ");
+          throw new Error("gagal mengambil data faq");
         }
         const hasil = await response.json();
         const data = Array.isArray(hasil) ? hasil : hasil.data;
         if (!Array.isArray(data)) {
-          throw new Error("Format data FAQ tidak sesuai");
+          throw new Error("format data faq tidak sesuai");
         }
         const tigaFAQ = data.slice(0, 3);
         setFaqs(tigaFAQ);
@@ -69,7 +68,7 @@ export default function FAQ() {
             <br />
             to begin?
           </h2>
-          <a   href="/contact" className="mt-6 font-google text-base font-medium text-blue-600 hover:underline" > Ask us a question <span className="ml-3">→</span>
+          <a   href="./contact" className="mt-6 font-google text-base font-medium text-blue-600 hover:underline" > Ask us a question <span className="ml-3">→</span>
           </a>
         </div>
         <div className="w-full min-w-0 font-google">
@@ -98,12 +97,7 @@ export default function FAQ() {
               key={faq.id ?? index}
               className="border-b border-gray-200 py-5 first:pt-0"
             >
-              <button
-                type="button"
-                onClick={() => toggleFAQ(faq.id)}
-                aria-expanded={terbuka.includes(faq.id)}
-                className="flex w-full items-center justify-between gap-6 text-left"
-              >
+              <button type="button" onClick={() => toggleFAQ(faq.id)} aria-expanded={terbuka.includes(faq.id)}  className="flex w-full items-center justify-between gap-6 text-left" >
                 <span className="font-google text-lg font-medium text-gray-900">
                   {faq.question}
                 </span>
@@ -131,11 +125,18 @@ export default function FAQ() {
         </div>
       </div>
     </section>
-    <section>
+    <section className="translate-x-[45px]">
         <img src={invitationPanel} className="translate-x-[125px]"/>
+        <div className="w-[8px] h-[8px] bg-[#4285F4] rounded-full flex items-center translate-x-[175px] translate-y-[-210px] ">
+          <p className="font-google whitespace-nowrap font-medium text-gray-500 translate-x-[15px] ">
+             YOUR NEXT CHAPTER
+             </p>
+                     </div>
+          <p className="text-5xl translate-x-[170px] translate-y-[-190px] font-google font-semibold whitespace-nowrap">Bring your curiosity.<br/>We'll build from there.</p>
+          <p className="text-xl translate-x-[170px] text-gray-600  translate-y-[-170px] font-google">Find a learning track, meet a collaborator, or start a conversation</p>
         <div className="translate-x-[1050px] translate-y-[-190px] grid gap-y-5">
-            <a href ="" target="_blank"><img src={action}/></a>
-           <a href ="" target="_blank"><img src={textLink} className="translate-x-[20px] translate-y-[-00px]"/></a> 
+            <a href ="" target="_blank"><img src={action} className="translate-y-[-120px]"/></a>
+           <a href ="" target="_blank"><img src={textLink} className="translate-x-[20px] translate-y-[-120px]"/></a> 
         </div>
     </section>
     </>
