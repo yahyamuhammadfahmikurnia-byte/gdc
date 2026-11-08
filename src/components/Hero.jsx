@@ -21,7 +21,7 @@ export default function Hero() {
               <a href="#tracks">
                 <img src={`${publicImages}track kecil.svg`} alt="find your track" className="h-auto max-w-[180px] md:max-w-[220px]" />
               </a>
-              <a href="#about">
+              <a href="">
                 <img src={`${publicImages}get to know us.svg`} alt="get to know" className="h-auto max-w-[180px] md:max-w-[220px]" />
               </a>
             </div>
