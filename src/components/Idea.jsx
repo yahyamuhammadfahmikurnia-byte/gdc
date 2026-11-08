@@ -14,18 +14,18 @@ export default function Idea() {
             alt="Example project brief: a little less friction, a better campus day"
             className="block h-auto w-full"
           />
-          <a href="" target = "_blank">
-          <img
-            src={decorativeCode}
-            alt=""
-            aria-hidden="true"
-            className="absolute right-[5%] top-[7.5%] h-auto w-6"
-          />
+          <a href="" target="_blank">
+            <img
+              src={decorativeCode}
+              alt=""
+              aria-hidden="true"
+              className="absolute right-[5%] top-[7.5%] h-auto w-6"
+            />
           </a>
         </div>
         <div className="flex min-w-0 flex-col items-start gap-6">
           <img src={sectionLabel} alt="" className="max-w-full" />
-           <p className="text-5xl font-google font-semibold whitespace-nowrap">Your next project could <br/> start on campus.</p>
+          <p className="text-5xl font-google font-semibold whitespace-nowrap">Your next project could <br /> start on campus.</p>
           <p className="font-google text-xl text-gray-500 ">
             What if finding a study partner, sharing resources, or navigating campus felt easier? Small, familiar problems can be the beginning of meaningful work.
           </p>
@@ -33,9 +33,9 @@ export default function Idea() {
             Bring research, design, and development together. Try an idea, get feedback, and make the next version better.
           </p>
           <a href="" target="_blank" rel="noreferrer">
-             <p className="font-google font-medium text-lg text-[#1967D2] " >
+            <p className="font-google font-medium text-lg text-[#1967D2] " >
               Explore project-based learning <strong>→</strong>
-             </p> 
+            </p>
           </a>
         </div>
       </div>

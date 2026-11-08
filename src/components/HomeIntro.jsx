@@ -11,8 +11,8 @@ export default function HomeIntro() {
       <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-12 px-6 lg:grid-cols-2">
         <div className="flex flex-col items-start gap-8">
           <img
-            src={campusCommunity} className="w-[200px]" alt="A campus a community"/>
-          <p className="text-6xl font-google font-semibold whitespace-nowrap">Not just learning<br/>tech.<br/>Finding your people. </p>
+            src={campusCommunity} className="w-[200px]" alt="A campus a community" />
+          <p className="text-6xl font-google font-semibold whitespace-nowrap">Not just learning<br />tech.<br />Finding your people. </p>
           <a href="./about">
             <img
               src={moreAbout}
@@ -28,13 +28,13 @@ export default function HomeIntro() {
             we can go <strong>further</strong> when we{" "}
             <strong>learn</strong> with each other.
           </p>
-           <p className="font-google text-[22px] leading-relaxed text-gray-500">
+          <p className="font-google text-[22px] leading-relaxed text-gray-500">
             From your first line of code to your next product idea, there's room to ask questions, share what you know,and try something new.
           </p>
-          <div class = "flex items-center gap-6">
-          <img src={attribute}/>
-          <img src={attributeOne}/>
-          <img src={attributeTwo}/>
+          <div class="flex items-center gap-6">
+            <img src={attribute} />
+            <img src={attributeOne} />
+            <img src={attributeTwo} />
           </div>
         </div>
       </div>

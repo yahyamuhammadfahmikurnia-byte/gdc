@@ -20,7 +20,7 @@ export default function Tracks() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [retry, setRetry] = useState(0);
-  
+
   useEffect(() => {
     const controller = new AbortController();
     async function ambilData() {
@@ -59,7 +59,7 @@ export default function Tracks() {
           <img
             src={sectionLabel} alt="Find your starting point" className="w-[200px]"
           />
-         <p className="text-7xl font-google font-semibold whitespace-nowrap">Many interest. One Shared<br/>journey</p>
+          <p className="text-7xl font-google font-semibold whitespace-nowrap">Many interest. One Shared<br />journey</p>
           <p className="font-google text-xl text-gray-500">
             Follow what excites you. Explore a track,
             then connect the dots with others.
@@ -87,44 +87,44 @@ export default function Tracks() {
           </p>
         )}
         {!loading && !error && tracks.length > 0 && (
-          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">  
-{tracks.map((track) => (
-  <article
-    key={track.id}
-    className="flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white"
-  >
-   <div className="relative z-20 h-[240px] w-full">
-  <img
-    src={gambarTrack[track.id]}
-    alt={track.name}
-    className="absolute left-0 top-0 h-auto w-full"
-  />
-</div>
-    <div className="flex flex-1 flex-col px-8 pb-8 pt-8">
-      <p className="font-google text-xs font-medium text-blue-600">
-        {labelTrack[track.id]}
-      </p>
-      <h3 className="mt-6 font-poppins text-2xl font-bold text-gray-900">
-        {track.name?.toLowerCase().replace(/^./, (c) => c.toUpperCase())}
-      </h3>
-      <p className="mt-6 font-google text-base leading-relaxed text-gray-500">
-        {track.description}
-      </p>
-      <div className="mt-auto pt-5">
-        <hr className="mb-5 border-gray-200" />
-        <p className="font-google text-sm text-gray-500">
-          {track.skills?.slice(0, 3).join(" · ")}
-        </p>
-        <a
-          href={track.explore_link || " /overview"}
-          className="mt-5 inline-block font-google font-medium text-blue-600"
-        >
-          Explore this track →
-        </a>
-      </div>
-    </div>
-  </article>
-))}
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {tracks.map((track) => (
+              <article
+                key={track.id}
+                className="flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white"
+              >
+                <div className="relative z-20 h-[240px] w-full">
+                  <img
+                    src={gambarTrack[track.id]}
+                    alt={track.name}
+                    className="absolute left-0 top-0 h-auto w-full"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col px-8 pb-8 pt-8">
+                  <p className="font-google text-xs font-medium text-blue-600">
+                    {labelTrack[track.id]}
+                  </p>
+                  <h3 className="mt-6 font-poppins text-2xl font-bold text-gray-900">
+                    {track.name?.toLowerCase().replace(/^./, (c) => c.toUpperCase())}
+                  </h3>
+                  <p className="mt-6 font-google text-base leading-relaxed text-gray-500">
+                    {track.description}
+                  </p>
+                  <div className="mt-auto pt-5">
+                    <hr className="mb-5 border-gray-200" />
+                    <p className="font-google text-sm text-gray-500">
+                      {track.skills?.slice(0, 3).join(" · ")}
+                    </p>
+                    <a
+                      href={track.explore_link || " /overview"}
+                      className="mt-5 inline-block font-google font-medium text-blue-600"
+                    >
+                      Explore this track →
+                    </a>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
         )}
       </div>
