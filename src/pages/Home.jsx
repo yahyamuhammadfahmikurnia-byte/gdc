@@ -5,6 +5,7 @@ import LearningFormats from "../components/LearningFormats.jsx";
 import Idea from "../components/Idea.jsx";
 import FirstMove from "../components/FirstMove.jsx";
 import FAQ from "../components/FAQ.jsx";
+import Bring from "../components/bringyourcuriosity copy2.jsx"
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       <Idea />
       <FirstMove />
       <FAQ />
+      <Bring/>
+      
     </main>
   );
 
