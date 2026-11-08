@@ -15,7 +15,7 @@ export default function(){
                     UNIVERSITAS GADJAH MADA • 2026/2027
                 </p>
             </div>
-            <div class="translate-x-[1190px] scale-135 -translate-y-[250px]">
+            <div class="translate-x-[1200px] scale-135 -translate-y-[250px]">
                 <img src={communityMark} alt = "communitymark" className=" scale-90 "/>
             </div>
         </section>

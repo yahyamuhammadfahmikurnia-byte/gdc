@@ -32,64 +32,64 @@ export default function LearningFormats() {
 
           <div className="flex translate-y-[30px] items-center justify-center gap-9">
             <div className="relative">
-             
+
               <img src={emptyPanel} alt="Program format" />
               <div>
                 <a href="" target="_blank">
-                <img src={book} alt="book" className="absolute left-[30px] top-[30px] "/>
-              </a>
-              <p className="absolute left-[30px] top-[70px] z-10 font-google text-3xl font-semibold">
-                Study together
-              </p>
-              
-              
-              <p className=" absolute left-[30px] top-[120px] text-lg text-gray-500 font-google">
-                Work through foundations in peer learning sessions. Bring your questions; leave with a<br/> next step
-              </p>
-              <a href="" target="_blank">
-              <p  className="font-google translate-x-[30px] text-[#1967D2] font-medium translate-y-[-45px]">
-                Study groups & guided practice
-              </p>
-              </a>
+                  <img src={book} alt="book" className="absolute left-[30px] top-[30px] " />
+                </a>
+                <p className="absolute left-[30px] top-[70px] z-10 font-google text-3xl font-semibold">
+                  Study together
+                </p>
+
+
+                <p className=" absolute left-[30px] top-[120px] text-lg text-gray-500 font-google">
+                  Work through foundations in peer learning sessions. Bring your questions; leave with a<br /> next step
+                </p>
+                <a href="" target="_blank">
+                  <p className="font-google translate-x-[30px] text-[#1967D2] font-medium translate-y-[-45px]">
+                    Study groups & guided practice
+                  </p>
+                </a>
               </div>
             </div>
             <div>
               <img src={emptyPanel} alt="Program format" />
-               <div className="relative translate-x-[04px] translate-y-[-291px]">
-                  <a href="" target="_blank">
-                   <img src={square} alt="book" className="absolute left-[30px] top-[30px] "/>
-                 </a>
-              <p className="absolute left-[30px] top-[70px] z-10 font-google text-3xl font-semibold">
-                Try it hands-on
-              </p>
-              <p className=" absolute left-[30px] top-[120px] text-lg text-gray-500 font-google">
-                Explore a tool or technique in a workshop,<br/>then put it to work in a small experiment
-              </p>
-              <a href ="" target="_blank">
-               <p  className="font-google translate-x-[30px] text-[#1967D2] font-medium translate-y-[247px]">
-               Workshops & technical sessions
-              </p>
-              </a>
+              <div className="relative translate-x-[04px] translate-y-[-291px]">
+                <a href="" target="_blank">
+                  <img src={square} alt="book" className="absolute left-[30px] top-[30px] " />
+                </a>
+                <p className="absolute left-[30px] top-[70px] z-10 font-google text-3xl font-semibold">
+                  Try it hands-on
+                </p>
+                <p className=" absolute left-[30px] top-[120px] text-lg text-gray-500 font-google">
+                  Explore a tool or technique in a workshop,<br />then put it to work in a small experiment
+                </p>
+                <a href="" target="_blank">
+                  <p className="font-google translate-x-[30px] text-[#1967D2] font-medium translate-y-[247px]">
+                    Workshops & technical sessions
+                  </p>
+                </a>
               </div>
             </div>
             <div>
               <img src={emptyPanel} alt="Program format" />
-               <div className="relative translate-x-[04px] translate-y-[-291px]">
-               <a href ="" target="_blank"> <img src={person} alt="book" className="absolute left-[30px] top-[30px] "/>
-               </a>
-              <p className="absolute left-[30px] top-[70px] z-10 font-google text-3xl font-semibold">
-              Share the process
-             </p>
-              <p className=" absolute left-[30px] top-[120px] text-lg text-gray-500 font-google">
-               Exchange feedback, explain your decisions,<br/>and learn from different ways of thinking.
-              </p>
-                <a href ="" target="_blank">
-               <p  className="font-google translate-x-[30px] text-[#1967D2] font-medium translate-y-[247px]">
-                Project circles & sharing sessions
-              </p>
-              </a>
+              <div className="relative translate-x-[04px] translate-y-[-291px]">
+                <a href="" target="_blank"> <img src={person} alt="book" className="absolute left-[30px] top-[30px] " />
+                </a>
+                <p className="absolute left-[30px] top-[70px] z-10 font-google text-3xl font-semibold">
+                  Share the process
+                </p>
+                <p className=" absolute left-[30px] top-[120px] text-lg text-gray-500 font-google">
+                  Exchange feedback, explain your decisions,<br />and learn from different ways of thinking.
+                </p>
+                <a href="" target="_blank">
+                  <p className="font-google translate-x-[30px] text-[#1967D2] font-medium translate-y-[247px]">
+                    Project circles & sharing sessions
+                  </p>
+                </a>
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -128,8 +128,12 @@ export default function LearningFormats() {
       <div className="translate-x-[1200px] translate-y-[-195px] grid gap-y-7">
 
         <img src={groupTitle} alt="Group title" />
+        <a href="https://www.instagram.com/gdgoc.ugm?utm_source=ig_web_button_share_sheet&srtk=ZDNlZDc0MzIxNw==" target="_blank">
         <img src={socialHandle} alt="Social handle" />
+        </a>
+                <a href="https://www.youtube.com/@gdgocugm" target="_blank">
         <img src={socialChannels} alt="Social channels" />
+        </a>
         <img src={description} alt="Description" />
       </div>
 
