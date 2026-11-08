@@ -16,7 +16,7 @@ export default function () {
                 </p>
             </div>
             <div class="translate-x-[1000px]  -translate-y-[250px]">
-                <img src={communityMark} alt="communitymark" className=" scale-90 " />
+                <img src={communityMark} alt="communityMaark" className=" scale-90 " />
             </div>
         </section>
     )
