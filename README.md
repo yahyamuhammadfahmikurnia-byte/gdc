@@ -3,6 +3,40 @@
 
 A responsive website for Google Developer Groups on Campus at Universitas Gadjah Mada, built as part of the GDGoC UGM Academic Hacker Frontend recruitment project.
 
+## Installation and Setup
+
+### Prerequisites
+- Node.js
+- npm
+- Git
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yahyamuhammadfahmikurnia-byte/gdc.git
+```
+
+### 2. Navigate to the project directory
+```bash
+cd gdc
+```
+
+### 3. Install dependencies
+```bash
+npm install
+```
+
+### 4. Start the development server
+```bash
+npm run dev
+```
+
+Open the local URL displayed in the terminal.
+
+### 5. Build for production
+```bash
+npm run build
+```
+
 ## Tech Stack
 
 - React.js
