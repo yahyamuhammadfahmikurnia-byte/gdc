@@ -23,18 +23,37 @@ export default function Findyourspark() {
       <div className="w-full h-[2px] bg-gray-300 translate-y-[-200px] my-10"></div>
       <div className="w-full h-[2px] bg-gray-300 translate-y-[-320px]  my-10">
         <div className="text-center gap-20 flex items-center justify-evenly">
-          <p className="font-google text-xl translate-y-[26px] text-[#1967D2]" >Learning tracks↓</p>
-          <p className="font-google text-xl translate-y-[26px] " >Learning format <span className="text-[#1967D2]">
-            ↓
-          </span></p>
-          <p className="font-google text-xl translate-y-[26px] " >Your learning journey pan <span className="text-[#1967D2]">
-            ↓
-          </span>
-          </p>
-          <p className="font-google text-xl translate-y-[26px] " >Find a starting point <span className="text-[#1967D2]">
-            ↓
-          </span>
-          </p>
+
+          <div className="w-full flex items-center justify-evenly">
+            <a
+              href="#learning-tracks"
+              className="font-google text-xl translate-y-[26px] text-[#1967D2]"
+            >
+              Learning tracks ↓
+            </a>
+
+            <a
+              href="#learning-formats"
+              className="font-google text-xl translate-y-[26px]"
+            >
+              Learning format <span className="text-[#1967D2]">↓</span>
+            </a>
+
+            <a
+              href="#learning-journey"
+            className="font-google text-xl translate-y-[26px]"
+            >
+              Your learning journey <span className="text-[#1967D2]">↓</span>
+            </a>
+
+            <a
+              href="#starting-point"
+              className="font-google text-xl translate-y-[26px]"
+            >
+              Find a starting point <span className="text-[#1967D2]">↓</span>
+            </a>
+          </div>
+
         </div>
       </div>
 

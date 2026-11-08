@@ -13,7 +13,9 @@
     --font-poppins: "Poppins", sans-serif;
     --font-google: "Google Sans Flex", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
     zoom: 1.2;
 }
