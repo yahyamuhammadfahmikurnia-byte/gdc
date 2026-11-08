@@ -1,16 +1,82 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# GDGoC UGM Website
 
-Currently, two official plugins are available:
+A responsive website for Google Developer Groups on Campus at Universitas Gadjah Mada, built as part of the GDGoC UGM Academic Hacker Frontend recruitment project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Motion for React
+- Lucide React
+- GDGoC UGM REST API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- Responsive website layout
+- Home, About, Overview, and Contact pages
+- Animated navigation bar
+- Dynamic content using REST API
+- Learning tracks and program formats
+- Learning journey information
+- Interactive contact categories
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Project Structure
+
+- `src/components/` - Reusable UI components
+- `src/pages/` - Website pages
+- `src/App.jsx` - Routing configuration
+- `public/` - Static assets
+
+## Getting Started
+
+### 1. Clone the repository
+
+    git clone https://github.com/yahyamuhammadfahmikurnia-byte/gdc.git
+
+### 2. Enter the project directory
+
+    cd gdc
+
+### 3. Install dependencies
+
+    npm install
+
+### 4. Run development server
+
+    npm run dev
+
+Open the local URL displayed in your terminal.
+
+### 5. Build for production
+
+    npm run build
+
+## API Integration
+
+This project uses the GDGoC UGM API:
+
+https://gdgoc-ugm-api.vercel.app/api
+
+Endpoints used include:
+
+- `/api/navigation`
+- `/api/tracks`
+- `/api/formats`
+- `/api/journey`
+- `/api/values`
+- `/api/roles`
+- `/api/faqs`
+- `/api/inquiry-categories`
+
+## Live Website
+
+https://gdc-beta.vercel.app
+
+## Author
+
+Yahya Muhammad Fahmi Kurnia
+
+Computer Science - Universitas Gadjah Mada
