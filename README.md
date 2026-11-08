@@ -3,6 +3,12 @@
 
 A responsive website for Google Developer Groups on Campus at Universitas Gadjah Mada, built as part of the GDGoC UGM Academic Hacker Frontend recruitment project.
 
+## 🎥 Project Presentation
+
+A 3–5 minute video explaining the project setup, component architecture, state management, and key implementations.
+
+📁 [Watch Project Presentation](https://drive.google.com/drive/folders/1VXCuoW7b812hbis9STytR1hSGWD1KcY0?usp=sharing)
+
 ## Installation and Setup
 
 ### Prerequisites
